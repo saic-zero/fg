@@ -5,6 +5,29 @@
 <link href="images/favicon.png" rel="icon" />
 <!-- Tell the browser to be responsive to screen width -->
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+<!-- Llamado de los plugin para control del diseño de las tablas -->
+{!!Html::style('table/stacktable.css')!!}
+{!!Html::style('table/stacktable.js')!!}
+{!!Html::style('table/stacktable.jquery.json')!!}
+{!!Html::style('table/stacktable.min.js')!!}
+
+<!-- Llamado de los plugin para control de estilos de letras -->
+{!!Html::style('fonts/IndieFlower.ttf')!!}
+
+<!-- Llamado de los plugin para control del diseño de tablas dinamicas bootgrid -->
+{!!Html::style('bootgrid/demo/css/bootstrap.css')!!}
+{!!Html::style('bootgrid/dist/jquery.bootgrid.css')!!}
+{!!Html::style('bootgrid/demo/js/modernizr-2.8.1.js')!!}
+
+{!!Html::style('bootgrid/lib/jquery-1.11.1.min.js')!!}
+{!!Html::style('bootgrid/demo/js/bootstrap.js')!!}
+{!!Html::style('bootgrid/dist/jquery.bootgrid.js')!!}
+{!!Html::style('bootgrid/dist/jquery.bootgrid.fa.js')!!}
+ 
+
+
+
 <!-- Bootstrap 3.3.5 -->
 {!!Html::style('bootstrap/css/bootstrap.min.css')!!}
 <!-- Font Awesome -->
@@ -145,7 +168,7 @@
 				<!-- sidebar menu: : style can be found in sidebar.less -->
 				<ul class="sidebar-menu">
 					<li class="header">MENU ADMINISTRADOR</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>Sucursal</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
@@ -158,7 +181,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>Cargos</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
@@ -171,11 +194,10 @@
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-files-o"></i>
-							<span>Empleado</span>
-							<span class="label label-primary pull-right">4</span>
+							<span>Empleado</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
               <li>
@@ -186,7 +208,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>Usuario</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>

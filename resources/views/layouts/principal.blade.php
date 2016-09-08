@@ -5,6 +5,29 @@
 <link href="images/favicon.png" rel="icon" />
 <!-- Tell the browser to be responsive to screen width -->
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+
+<!-- Llamado de los plugin para control del diseño de las tablas -->
+{!!Html::style('table/stacktable.css')!!}
+{!!Html::style('table/stacktable.js')!!}
+{!!Html::style('table/stacktable.jquery.json')!!}
+{!!Html::style('table/stacktable.min.js')!!}
+
+<!-- Llamado de los plugin para control de estilos de letras -->
+{!!Html::style('fonts/IndieFlower.ttf')!!}
+
+<!-- Llamado de los plugin para control del diseño de tablas dinamicas bootgrid -->
+{!!Html::style('bootgrid/demo/css/bootstrap.css')!!}
+{!!Html::style('bootgrid/dist/jquery.bootgrid.css')!!}
+{!!Html::style('bootgrid/demo/js/modernizr-2.8.1.js')!!}
+
+{!!Html::style('bootgrid/lib/jquery-1.11.1.min.js')!!}
+{!!Html::style('bootgrid/demo/js/bootstrap.js')!!}
+{!!Html::style('bootgrid/dist/jquery.bootgrid.js')!!}
+{!!Html::style('bootgrid/dist/jquery.bootgrid.fa.js')!!}
+ 
+
+
 <!-- Bootstrap 3.3.5 -->
 {!!Html::style('bootstrap/css/bootstrap.min.css')!!}
 <!-- Font Awesome -->
@@ -146,20 +169,53 @@
 				<ul class="sidebar-menu">
 
 					<li class="header" align="center">MENU</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
-							<i class="fa fa-dashboard"></i> <span>INVENTARIO</span> <i class="fa fa-angle-left pull-right"></i>
+					<i class="fa fa-dashboard"></i> <span>INVENTARIO</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>
-									<a href="{!!URL::to('')!!}"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+									 <li class="treeview">
+										<a href="#">
+											<i class="fa fa-files-o"></i>
+											<span>Gestionar Productos</span>
+											<span class="label label-primary pull-right"></span>
+										</a>
+										<ul class="treeview-menu">
+
+										    <li>
+													 <li class="treeview">
+													   <a href="#">
+														<i class="fa fa-files-o"></i>
+														<span>Categorias</span><span class="label label-primary pull-right"></span>
+													    </a>
+													    <ul class="treeview-menu">
+							                            <li>
+																<a href="{!!URL::to('/categoria/create')!!}"><i class='fa fa-plus fa-fw'></i>Agregar Categorias</a>
+														</li>
+														<li>
+																<a href="{!!URL::to('/categoria')!!}"><i class='fa fa-list-ol fa-fw'></i> Listar Categorias</a>
+														</li>
+													   </ul>
+												     </li>
+				                           </li>
+
+				                            <li>
+													<a href="{!!URL::to('/producto/create')!!}"><i class='fa fa-plus fa-fw'></i> Agregar Productos</a>
+											</li>
+											 <li>
+													<a href="{!!URL::to('/producto')!!}"><i class='fa fa-list-ol fa-fw'></i>Listar Productos</a>
+											</li>
+										</ul>
+							
+									</li>
 							</li>
 							<li>
-									<a href="{!!URL::to('')!!}"><i class='fa fa-list-ol fa-fw'></i> Sucursales</a>
+									<a href="{!!URL::to('')!!}"><i class='fa fa-list-ol fa-fw'></i> Informes</a>
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>EMPLEADOS</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
@@ -172,7 +228,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>COMPRAS</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
@@ -186,7 +242,7 @@
 						</ul>
 					</li>
 
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>VENTAS</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
@@ -199,7 +255,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>SEGURIDAD</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>

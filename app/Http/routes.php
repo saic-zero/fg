@@ -21,3 +21,6 @@ Route::resource('usuario', 'UsuarioController');
 Route::resource('sucursal','SucursalController');
 Route::resource('empleado','EmpleadoController');
 Route::resource('cargo','CargoController');
+Route::resource('proveedor', 'ProveedorController');
+Route::resource('categoria', 'CategoriaController');
+Route::resource('producto', 'ProductoController');

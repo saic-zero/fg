@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/','frontController@index');
+// Route::get('/','frontController@index');
+Route::get('/','loginController@index');
+Route::get('index','frontController@index');
 Route::get('admin','frontController@admin');
 
 Route::resource('usuario', 'UsuarioController');

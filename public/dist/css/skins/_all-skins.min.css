@@ -1,0 +1,74 @@
+/*color de la barra superior*/
+.skin-blue .main-header .navbar{
+  background-color:#3c8dbc}
+
+/*color de la letra de la barra superior*/
+  .skin-blue .main-header .navbar .nav>li>a{color:#fff}
+
+/*color hover barra superior derecha*/
+  .skin-blue .main-header .navbar
+  .nav>li>a:hover,.skin-blue .main-header .navbar
+   .nav>li>a:active,.skin-blue .main-header .navbar .nav>li>a:focus,
+   .skin-blue .main-header .navbar .nav .open>a,.skin-blue .main-header
+   .navbar .nav .open>a:hover,.skin-blue .main-header .navbar .nav .open>a:focus,
+   .skin-blue .main-header .navbar .nav>.active>a{
+     background:rgba(0,0,0,0.7);color:yellow}
+
+
+/*fondo hover menu desplegable*/
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+  background-color:#E9967A}
+
+  .skin-blue .main-header .navbar .sidebar-toggle{
+    background-color:black}
+
+/*fondo esquna superior izquierda**/
+  .skin-blue .main-header .logo{
+    background-color:#365C96;
+    color:#fff;
+    border-bottom:0 solid transparent}
+
+/*color hover esquna superior izquierda*/
+  .skin-blue .main-header .logo:hover{background-color:#95B1CB}
+
+/*fondo para usuario barra superior*/
+  .skin-blue .main-header li.user-header{background-color:#3c8dbc}
+
+/*fondo detras de imagen principal*/
+  .skin-blue .content-header{background:#fff}
+
+/*fondo barra menu general*/
+  .skin-blue .wrapper,.skin-blue .main-sidebar,.skin-blue .left-side{background-color:#344346}
+
+/*panel del usuario*/
+  .skin-blue .user-panel>.info,.skin-blue .user-panel>.info>a{color:yellow}
+
+/*titulo de la barra de menu*/
+  .skin-blue .sidebar-menu>li.header{color:black;background:#95B1CB}
+
+/*grosor de la linea que esta a la par de los menus izquierda*/
+  .skin-blue .sidebar-menu>li>a{border-left:5px solid transparent}
+
+/*color de la barra de menu */
+  .skin-blue .sidebar-menu>li:hover>a,.skin-blue .sidebar-menu>li.active>a{
+    color:#fff;
+    background:#2B608A;
+    border-left-color:#CFDDEB}
+
+/*color fondo submenu*/
+  .skin-blue .sidebar-menu>li>.treeview-menu{
+    margin:10px;
+    background:black}
+
+  .skin-blue .sidebar a{color:#b8c7ce}
+
+/*color hover sobre submenu*/
+.skin-blue .sidebar a:hover{text-decoration:none;
+  background:#95B1CB;
+  }
+
+/*color texto submenu*/
+  .skin-blue .treeview-menu>li>a{color:#8aa4af}
+
+/*color texto hover submenu*/
+  .skin-blue .treeview-menu>li.active>a,.skin-blue .treeview-menu>li>a:hover{color:black}

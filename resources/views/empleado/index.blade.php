@@ -8,27 +8,40 @@
 @endif
 
 
-<div class="logo-lg">
-  <h2>TABLA EMPLEADOS</h2>
-</div>
-<div class="box-body">
-  <div class="box box-infor"></div>
-<table class="table table-bordered table-striped">
-  <thead>
-    <th>Empleado</th>
-  </thead>
-  @foreach ($empleados as $empleado)
-  <tbody>
-    <td>{{$empleado->nombresEmp}}</td>
-    <td>{{$empleado->apellidosEmp}}</td>
-    <td>
-      {!!link_to_route('empleado.edit',$title='Editar', $parametro=$empleado->id,$atributo=['class'=>'btn btn-primary'])!!}
-    </td>
-    <td>@include('empleado.eliminar')</td>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="box">
+      <div class="box-header">
+        <h3 class="box-title">Lista de Empleados</h3>
+      </div><!-- /.box-header -->
+      <div class="box-body">
+        <table id="example1" class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Dirección</th>
+              <th>Teléfono</th>
+              <th>Contratación</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          @foreach ($empleados as $empleado)
+          <tbody>
+            <tr>
+              <td>{{$empleado->nombresEmp}}</td>
+              <td>{{$empleado->apellidosEmp}}</td>
+              <td>{{$empleado->direccionEmp}}</td>
+              <td>{{$empleado->telefonoEmp}}</td>
+              <td>{{$empleado->fechaIngrSuc}}</td>
+              <td>{!!link_to_route('empleado.edit',$title='Editar', $parametro=$empleado->id,$atributo=['class'=>'btn btn-primary'])!!}</td>
+            </tr>
+          </tbody>
+          @endforeach
+        </table>
+      </div><!-- /.box-body -->
+    </div><!-- /.box -->
+  </div><!-- /.col -->
+</div><!-- /.row -->
 
-  </tbody>
- @endforeach
-</table>
-{!!$empleados->render()!!}
-</div>
 @stop

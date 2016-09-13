@@ -11,21 +11,21 @@
   <div class="col-xs-12">
     <div class="box">
       <div class="box-header">
-        <h3 class="box-title">Lista de Cargos</h3>
+        <h3 class="box-title">Listado de Categorias</h3>
       </div><!-- /.box-header -->
       <div class="box-body">
         <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Cargo</th>
-              <th>Accion</th>
+              <th>Categoria</th>
+              <th>Acción</th>
             </tr>
           </thead>
-          @foreach ($cargos as $cargo)
+          @foreach ($categorias as $categoria)
           <tbody>
             <tr>
-              <td>{{$cargo->nombreCargo}}</td>
-              <td> {!!link_to_route('cargo.edit',$title='Editar', $parametro=$cargo->id,$atributo=['class'=>'btn btn-primary'])!!}</td>
+              <td>{{$categoria->nombreCategoria}}</td>
+              <td> {!!link_to_route('categoria.edit',$title='Editar', $parametro=$categoria->id,$atributo=['class'=>'btn btn-primary'])!!}</td>
             </tr>
             </tbody>
             @endforeach
@@ -35,9 +35,8 @@
     </div><!-- /.col -->
   </div><!-- /.row -->
   <div>
-  </div>
 
-  <script>
+    <script>
     $(function () {
       $("#example1").DataTable();
       $('#example2').DataTable({
@@ -53,21 +52,22 @@
 
   <!-- <script>
   document.querySelector('ul.examples li.warning.confirm button').onclick = function(){
-  	swal({
-  		title: "Are you sure?",
-  		text: "You will not be able to recover this imaginary file!",
-  		type: "warning",
-  		showCancelButton: true,
-  		confirmButtonColor: '#DD6B55',
-  		confirmButtonText: 'Yes, delete it!',
-  		closeOnConfirm: false
-  	},
-  	function(){
-  		swal("Deleted!", "Your imaginary file has been deleted!", "success");
-  	});
+    swal({
+      title: "Are you sure?",
+      text: "You will not be able to recover this imaginary file!",
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonColor: '#DD6B55',
+      confirmButtonText: 'Yes, delete it!',
+      closeOnConfirm: false
+    },
+    function(){
+      swal("Deleted!", "Your imaginary file has been deleted!", "success");
+    });
   };
 
 
   </script> -->
 
 @stop
+

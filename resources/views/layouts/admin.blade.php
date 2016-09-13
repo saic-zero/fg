@@ -16,7 +16,10 @@
 
 {!!Html::style('plugins/datatables/dataTables.bootstrap.css')!!}
 
-<!-- {!!Html::style('css/example.css')!!} -->
+<!-- alertas con script -->
+{!!Html::style('css/sweetalert.css')!!}
+<!--fin de alertas con script   -->
+
 
 
 <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -257,6 +260,8 @@
 
 
 {!!Html::script('js/sweetalert-dev.js')!!}  <!-- plugin alertas -->
+<!-- This is what you need -->
+<!--.......................-->
 
 <!-- <script>
 document.querySelector('ul.examples li.warning.confirm button').onclick = function(){
@@ -286,8 +291,9 @@ document.querySelector('ul.examples li.warning.confirm button').onclick = functi
 				"autoWidth": false
 			});
 		});
-	</script>
 
+
+	</script>
 	<!--para validar telefono -->
 	<script>
 	$(function () {

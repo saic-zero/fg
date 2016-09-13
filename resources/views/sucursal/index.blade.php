@@ -23,6 +23,7 @@
                   <th>Estado</th>
                   <th>Dirección</th>
                   <th>Acción</th>
+                  <th>Acción</th>
                 </tr>
               </thead>
               @foreach ($sucursals as $sucursal)
@@ -35,6 +36,11 @@
                 <td>{{$sucursal->direccionSuc}}</td>
                 <td>
                   {!!link_to_route('sucursal.edit',$title='Editar', $parametro=$sucursal->id,$atributo=['class'=>'btn btn-primary'])!!}
+                </td>
+                <td>
+                <li class="warning cancel">
+              			<button >Deshabilitar</button>
+              	</li>
                 </td>
                 </tr>
               </tbody>

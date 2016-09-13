@@ -146,22 +146,57 @@
 				<ul class="sidebar-menu">
 
 					<li class="header" align="center">MENU</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>INVENTARIO</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>
-									<a href="{!!URL::to('')!!}"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+									
+									<li class="treeview">
+										<a href="#">
+											<i class="fa fa-files-o"></i>
+											<span>Gestionar Productos</span>
+											<span class="label label-primary pull-right"> </span>
+										</a>
+										<ul class="treeview-menu">
+
+										    <li>
+													 <li class="treeview">
+													   <a href="#">
+														<i class="fa fa-files-o"></i>
+														<span>Categorias</span><span class="label label-primary pull-right"> </span>
+													    </a>
+													    <ul class="treeview-menu">
+							                            <li>
+																<a href="{!!URL::to('/categoria/create')!!}"><i class='fa fa-plus fa-fw'></i>Agregar Categorias</a>
+														</li>
+														<li>
+																<a href="{!!URL::to('/categoria')!!}"><i class='fa fa-list-ol fa-fw'></i> Listar Categorias</a>
+														</li>
+													   </ul>
+												     </li>
+				                           </li>
+
+				                            <li>
+													<a href="{!!URL::to('/producto/create')!!}"><i class='fa fa-plus fa-fw'></i> Agregar Productos</a>
+											</li>
+											 <li>
+													<a href="{!!URL::to('/producto')!!}"><i class='fa fa-list-ol fa-fw'></i>Listar Productos</a>
+											</li>
+										</ul>
+							
+									</li>
+
 							</li>
 							<li>
-									<a href="{!!URL::to('')!!}"><i class='fa fa-list-ol fa-fw'></i> Sucursales</a>
+									<a href="{!!URL::to('')!!}"><i class='fa fa-list-ol fa-fw'></i> Informes</a>
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
-							<i class="fa fa-dashboard"></i> <span>EMPLEADOS</span> <i class="fa fa-angle-left pull-right"></i>
+							<i class="fa fa-users text-aqua"></i> <span>EMPLEADOS</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>
@@ -172,13 +207,28 @@
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
-							<i class="fa fa-dashboard"></i> <span>COMPRAS</span> <i class="fa fa-angle-left pull-right"></i>
+							<i class="fa fa-shopping-cart text-green"></i> <span>COMPRAS</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>
-									<a href="{!!URL::to('/sucursal/create')!!}"><i class='fa fa-plus fa-fw'></i> Agregar</a>
+									<li class="treeview">
+									<a href="#">
+										<i class="fa fa-files-o"></i>
+										<span>Registrar Proveedores</span>
+										<span class="label label-primary pull-right"> </span>
+									</a>
+									<ul class="treeview-menu">
+			                             <li>
+												<a href="{!!URL::to('/proveedor/create')!!}"><i class='fa fa-plus fa-fw'></i>Agregar</a>
+										</li>
+										<li>
+												<a href="{!!URL::to('/proveedor')!!}"><i class='fa fa-list-ol fa-fw'></i>Listar Proveedores</a>
+										</li>
+									</ul>
+								</li>
+							</li>
 							</li>
 							<li>
 									<a href="{!!URL::to('/sucursal')!!}"><i class='fa fa-list-ol fa-fw'></i> Sucursales</a>
@@ -186,7 +236,7 @@
 						</ul>
 					</li>
 
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
 							<i class="fa fa-dashboard"></i> <span>VENTAS</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
@@ -199,9 +249,9 @@
 							</li>
 						</ul>
 					</li>
-					<li class="active treeview">
+					<li class="treeview">
 						<a href="#">
-							<i class="fa fa-dashboard"></i> <span>SEGURIDAD</span> <i class="fa fa-angle-left pull-right"></i>
+							<i class="fa fa-warning text-yellow"></i> <span>SEGURIDAD</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>

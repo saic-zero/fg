@@ -11,14 +11,15 @@
   <div class="col-xs-12">
     <div class="box">
       <div class="box-header">
-        <h3 class="box-title">Listado de Categorias</h3>
+        <h3 class="box-title">Listado de Presentaciones</h3>
       </div><!-- /.box-header -->
       <div class="box-body">
         <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Categoria</th>
-              <th>Acción</th>
+              <th>Presentacion</th>
+              <th>Acción 1</th>
+              <th>Acción 2</th>
             </tr>
           </thead>
           @foreach ($categorias as $categoria)
@@ -26,6 +27,7 @@
             <tr>
               <td>{{$categoria->nombreCategoria}}</td>
               <td> {!!link_to_route('categoria.edit',$title='Editar', $parametro=$categoria->id,$atributo=['class'=>'btn btn-primary'])!!}</td>
+               <td>@include('categoria.eliminar')</td>
             </tr>
             </tbody>
             @endforeach

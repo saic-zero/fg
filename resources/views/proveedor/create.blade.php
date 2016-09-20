@@ -5,6 +5,7 @@
 {!! Form::open(['route'=>'proveedor.store','method'=>'POST']) !!}
     @include('proveedor.formulario.usr')
   {!! Form::submit('Registrar',['class'=>'btn btn-primary']) !!}
+    {!! Form::reset('Cancelar',['class'=>'btn btn-danger']) !!}
 {!! Form::close() !!}
 	@endsection
 

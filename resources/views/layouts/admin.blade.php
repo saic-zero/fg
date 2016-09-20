@@ -25,6 +25,8 @@
 <!-- AdminLTE Skins. Choose a skin from the css/skins
 		 folder instead of downloading all of them to reduce the load. -->
 		 {!!Html::style('dist/css/skins/_all-skins.min.css')!!}
+
+		 {!!Html::style('dist/css/skins/tab.css')!!}  <!-- Llama al css que se encar de manipular los tab de las listas -->
 		 <!-- iCheck -->
 		 {!!Html::style('plugins/iCheck/flat/blue.css')!!}
 		 <!-- Morris chart -->

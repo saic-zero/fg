@@ -25,3 +25,8 @@ document.querySelector('.warning.cancel button').onclick = function(){
     }
   });
 };
+
+$("#listaDeshabilitados").on('change',function(event){
+  var aux=0;
+  
+});

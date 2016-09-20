@@ -14,7 +14,7 @@ if($bandera==1){
   </div><!-- /.box-header -->
   <div class="box-body">
     <div class="row">
-    <div class="col-md-6">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <table class="table">
     <tr>
            <div class="col-md-6">
@@ -62,7 +62,7 @@ if($bandera==1){
       </tr>
 	  
       <tr>
-         <div class="form-group">
+         <div class="form-group">zz
 		<td>{!!Form::label('lbCategoria','Categoria:')!!}</td>
 		<td>{!!Form::select('categoria_id',$categorias)!!}</td>
 	   </div>

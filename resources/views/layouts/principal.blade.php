@@ -16,6 +16,8 @@
 <!-- AdminLTE Skins. Choose a skin from the css/skins
 		 folder instead of downloading all of them to reduce the load. -->
 		 {!!Html::style('dist/css/skins/_all-skins.min.css')!!}
+
+		 {!!Html::style('dist/css/skins/tab.css')!!}
 		 <!-- iCheck -->
 		 {!!Html::style('plugins/iCheck/flat/blue.css')!!}
 		 <!-- Morris chart -->
@@ -148,24 +150,25 @@
 					<li class="header" align="center">MENU</li>
 					<li class="treeview">
 						<a href="#">
-							<i class="fa fa-dashboard"></i> <span>INVENTARIO</span> <i class="fa fa-angle-left pull-right"></i>
+							<i class="fa fa-files-o text-aqua "></i> <span>INVENTARIO</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>
 									
 									<li class="treeview">
 										<a href="#">
-											<i class="fa fa-files-o"></i>
+											<i class="fa fa-folder"></i>
 											<span>Gestionar Productos</span>
-											<span class="label label-primary pull-right"> </span>
+											<i class="fa fa-angle-left pull-right"></i>
 										</a>
 										<ul class="treeview-menu">
 
 										    <li>
 													 <li class="treeview">
 													   <a href="#">
-														<i class="fa fa-files-o"></i>
-														<span>Categorias</span><span class="label label-primary pull-right"> </span>
+														<i class="fa fa-folder"></i>
+														<span>Categorias</span>
+														<i class="fa fa-angle-left pull-right"></i>
 													    </a>
 													    <ul class="treeview-menu">
 							                            <li>
@@ -190,7 +193,8 @@
 
 							</li>
 							<li>
-									<a href="{!!URL::to('')!!}"><i class='fa fa-list-ol fa-fw'></i> Informes</a>
+									<a href="{!!URL::to('')!!}"><i class='fa fa-circle'></i> Informes</a>
+
 							</li>
 						</ul>
 					</li>
@@ -209,19 +213,19 @@
 					</li>
 					<li class="treeview">
 						<a href="#">
-							<i class="fa fa-shopping-cart text-green"></i> <span>COMPRAS</span> <i class="fa fa-angle-left pull-right"></i>
+							<i class="fa fa-shopping-cart text-aqua"></i> <span>COMPRAS</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>
 									<li class="treeview">
 									<a href="#">
-										<i class="fa fa-files-o"></i>
+										<i class="fa fa-folder"></i>
 										<span>Registrar Proveedores</span>
-										<span class="label label-primary pull-right"> </span>
+								        <i class="fa fa-angle-left pull-right"></i>
 									</a>
 									<ul class="treeview-menu">
 			                             <li>
-												<a href="{!!URL::to('/proveedor/create')!!}"><i class='fa fa-plus fa-fw'></i>Agregar</a>
+												<a href="{!!URL::to('/proveedor/create')!!}"><i class='fa fa-plus-square'></i>Agregar</a>
 										</li>
 										<li>
 												<a href="{!!URL::to('/proveedor')!!}"><i class='fa fa-list-ol fa-fw'></i>Listar Proveedores</a>
@@ -231,27 +235,27 @@
 							</li>
 							</li>
 							<li>
-									<a href="{!!URL::to('/sucursal')!!}"><i class='fa fa-list-ol fa-fw'></i> Sucursales</a>
+									<a href="#"><i class='fa fa-circle'></i> Informes</a>
 							</li>
 						</ul>
 					</li>
 
 					<li class="treeview">
 						<a href="#">
-							<i class="fa fa-dashboard"></i> <span>VENTAS</span> <i class="fa fa-angle-left pull-right"></i>
+							<i class="fa fa-laptop text-aqua"></i> <span>VENTAS</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>
 									<a href="{!!URL::to('/sucursal/create')!!}"><i class='fa fa-plus fa-fw'></i> Agregar</a>
 							</li>
 							<li>
-									<a href="{!!URL::to('/sucursal')!!}"><i class='fa fa-list-ol fa-fw'></i> Sucursales</a>
+									<a href="#"><i class='fa fa-circle'></i> Informes</a>
 							</li>
 						</ul>
 					</li>
 					<li class="treeview">
 						<a href="#">
-							<i class="fa fa-warning text-yellow"></i> <span>SEGURIDAD</span> <i class="fa fa-angle-left pull-right"></i>
+							<i class="fa fa-warning text-aqua"></i> <span>SEGURIDAD</span> <i class="fa fa-angle-left pull-right"></i>
 						</a>
 						<ul class="treeview-menu">
 							<li>

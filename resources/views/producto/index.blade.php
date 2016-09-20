@@ -18,7 +18,7 @@
                <thead>
                     <th>NOMBRE</th>
                     <th>MODIFICAR</th>
-                    <th>DESHABILITAR</th>
+                    <th>HABILITAR</th>
                   </thead>
                   @foreach ($productos as $producto)
                   <tbody>

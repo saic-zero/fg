@@ -19,7 +19,7 @@ class CategoriaController extends Controller
     public function index()
     {
         
-      $categorias= \SICVFG\Categoria::paginate(2);
+      $categorias= \SICVFG\Categoria::all();
         //Accedemos al modelo a extraer los datos que necesitamos
        return view ('categoria.index',compact('categorias'));
         //Enviamos la informacion obtenida en la variable categoria  
